@@ -193,5 +193,31 @@ section#espanha {
     background-size: cover;
 }
 
+section#italia {
+    height: 50vh;
+    background: url('../imagens-pag2/pexels-pixabay-56886.jpg') center center no-repeat scroll;
+    background-size: cover;
+}
+
+#img9 {
+    background: url('../imagens-pag2/pexels-david-bartus-43782-586687.jpg') center center no-repeat scroll;
+    background-size: cover;
+}
+
+#img10 {
+    background: url('../imagens-pag2/pexels-dico-baskoro-693731013-18101408.jpg') center center no-repeat scroll;
+    background-size: cover;
+}
+
+#img11 {
+    background: url('../imagens-pag2/pexels-mark-neal-201020-2225439.jpg') center center no-repeat scroll;
+    background-size: cover;
+}
+
+#img12 {
+    background: url('../imagens-pag2/pexels-mark-neal-201020-2225442.jpg') center center no-repeat scroll;
+    background-size: cover;
+}
+
 
 
