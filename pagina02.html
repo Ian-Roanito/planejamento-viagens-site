@@ -4,74 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+    <script src="https://kit.fontawesome.com/3a4a8b30ac.js" crossorigin="anonymous"></script> <!-- Chave para usar os icones do font awesome-->
+    
+    
+
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/configs.css">
-    <title>Landing Page</title>
-
-    <style>   
-
-        
-
-        
-
-        
-
-
-
-        @media screen and (max-width: 730px) {
-            header {
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-
-            aside h2 {
-                font-size: 3em;
-            }
-
-            
-        }
-
-        @media screen and (max-width: 1376px) {
-            #img4 {
-                display: none;
-            }
-        }
-
-        @media screen and (max-width: 1035px) {
-            #img4 {
-                display: block;
-            }
-        }
-
-        @media screen and (max-width: 1470px) {
-            aside h2 {
-                font-size: 5em;
-            }
-        }
-
-        @media screen and (max-width: 1226px) {
-            aside h2 {
-                font-size: 4em;
-            }
-        }
-
-        @media screen and (max-width: 984px) {
-            aside h2 {
-                font-size: 3 em;
-            }
-        }
-        
-        
-    </style>
+    <title>Plano de Viagens</title>
 </head>
 <body>
     <header>
-            <h1>Landing Page</h1>
+            <h1>Plano de Viagens</h1>
         
             <ul>
-                <a href="">Home</a><a href="">Compra</a><a href="">Destaque</a><a href="">Footer</a>
+                <a href="">Home</a>
+                <a href="">Agendar</a>
+                <a href="">Destaque</a>
+                <a href="#footer">Rodapé</a>
             </ul>
     </header>
 
@@ -129,7 +81,7 @@
         </section>
 
         <section id="espaco">
-            <section id="franca">
+            <section id="franca" class="fundo-sombra">
                 <div id="fundo-title-paises">
                     <div class="title-pais">
                         <h3>França</h3>
@@ -137,21 +89,29 @@
                 </div>
             </section>
             <section class="imagens-paises">
-                <div class="img-paises" id="img1"></div>
-                <div class="img-paises" id="img2"></div>
-                <div class="img-paises" id="img3"></div>
-                <div class="img-paises" id="img4"></div>
+                <div class="img-paises" id="img1">
+                    <div id="nome-lugar">Arco do Triunfo</div>
+                </div>
+                <div class="img-paises" id="img2">
+                    <div id="nome-lugar">Torre Eiffel</div>
+                </div>
+                <div class="img-paises" id="img3">
+                    <div id="nome-lugar">Museu do Louvre</div>
+                </div>
+                <div class="img-paises" id="img4">
+                    <div id="nome-lugar">Palácio de Versalhes</div>
+                </div>
 
                 
             </section>
         </section>
 
         <aside class="divisao">
-            <h3>DIVISÃO DE SEÇÕES</h3>
+            <div id="div-divisao"></div>
         </aside>
 
         <section id="espaco">
-            <section id="espanha">
+            <section id="espanha" class="fundo-sombra">
                 <div id="fundo-title-paises">
                     <div class="title-pais">
                         <h2>Espanha</h2>
@@ -159,19 +119,27 @@
                 </div>
             </section>
             <section class="imagens-paises">
-                <div class="img-paises" id="img5"></div>
-                <div class="img-paises" id="img6"></div>
-                <div class="img-paises" id="img7"></div>
-                <div class="img-paises" id="img8"></div>
+                <div class="img-paises" id="img5">
+                    <div id="nome-lugar">Edificio Metropolis</div>
+                </div>
+                <div class="img-paises" id="img6">
+                    <div id="nome-lugar">Ronda</div>
+                </div>
+                <div class="img-paises" id="img7">
+                    <div id="nome-lugar">Aqueduto de Segóvia</div>
+                </div>
+                <div class="img-paises" id="img8">
+                    <div id="nome-lugar">Catedral de Barcelona</div>
+                </div>
             </section>
         </section>
 
         <aside class="divisao">
-            <h3>DIVISÃO DE SEÇÕES</h3>
+            <div id="div-divisao"></div>
         </aside>
 
         <section id="espaco">
-            <section id="italia">
+            <section id="italia" class="fundo-sombra">
                 <div id="fundo-title-paises">
                     <div class="title-pais">
                         <h2>Itália</h2>
@@ -179,19 +147,27 @@
                 </div>
             </section>
             <section class="imagens-paises">
-                <div class="img-paises" id="img9"></div>
-                <div class="img-paises" id="img10"></div>
-                <div class="img-paises" id="img11"></div>
-                <div class="img-paises" id="img12"></div>
+                <div class="img-paises" id="img9">
+                    <div id="nome-lugar">Veneza</div>
+                </div>
+                <div class="img-paises" id="img10">
+                    <div id="nome-lugar">Torre de Pisa</div>
+                </div>
+                <div class="img-paises" id="img11">
+                    <div id="nome-lugar">Coliseu</div>
+                </div>
+                <div class="img-paises" id="img12">
+                    <div id="nome-lugar">Fontana di Trevi</div>
+                </div>
             </section>
         </section>
 
         <aside class="divisao">
-            <h3>DIVISÃO DE SEÇÕES</h3>
+            <div id="div-divisao"></div>
         </aside>
 
         <section id="espaco">
-            <section id="turquia">
+            <section id="turquia" class="fundo-sombra">
                 <div id="fundo-title-paises">
                     <div class="title-pais">
                         <h2>Turquia</h2>
@@ -199,13 +175,66 @@
                 </div>
             </section>
             <section class="imagens-paises">
-                <div class="img-paises" id="img13"></div>
-                <div class="img-paises" id="img14"></div>
-                <div class="img-paises" id="img15"></div>
-                <div class="img-paises" id="img16"></div>
+                <div class="img-paises" id="img13">
+                    <div id="nome-lugar">Palácio de Topkapi</div>
+                </div>
+                <div class="img-paises" id="img14">
+                    <div id="nome-lugar">Estreito de Bósforo</div>
+                </div>
+                <div class="img-paises" id="img15">
+                    <div id="nome-lugar">Mesquita Selimiye</div>
+                </div>
+                <div class="img-paises" id="img16">
+                    <div id="nome-lugar">Palácio Dolmabahçe</div>
+                </div>
             </section>
         </section>
 
     </main>
+
+    <footer id="footer">
+        <div class="top">
+            <div class="left">
+                <h2>Entre em contato</h2>
+                <blockquote>Vamos conversar sobre sua viagem.</blockquote>
+                <button>
+                    Agendar uma ligação 
+                    <span class="symbols"><i class="fa-solid fa-arrow-right"></i></span>
+                </button>
+            </div>
+            <div class="right links">
+                <ul>
+                    <li>
+                        <h2>Empresa</h2>
+                        <a href="#">Sobre</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Carreiras</a>
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <h2>Recursos</h2>
+                        <a href="#">Ajuda</a>
+                        <a href="#">Suporte</a>
+                        <a href="#">Instruções</a>
+                        <a href="#">Documentos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="left">
+                <p>&copy; IanRoanito 2026 . Todos os direitos Reservados</p>
+            </div>
+            <div class="right socials">
+                <a href="#" id="face"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" id="twit"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="#" id="insta"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" id="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="javascript/header.js"></script>
 </body>
-</html>

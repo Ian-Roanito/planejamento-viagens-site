@@ -1,4 +1,7 @@
 
+main {
+    background-color: rgb(65, 63, 63);
+}
 
 section#inicio {
     position: relative;
@@ -18,7 +21,7 @@ aside#text {
 #conteudo-inicio {
     border-radius: 15px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.527);
+    background-color: #332a29ce;
     width: 100%;
     padding: 10px;
     transition: transform 0.5s ease-in-out;
@@ -26,7 +29,8 @@ aside#text {
 
 #conteudo-inicio h2 {
     font-family: 'MovLette';
-    color: white;
+    color: var(--cor1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.397);
 }
 
 #conteudo-inicio:hover {
@@ -73,13 +77,14 @@ td {
 #secao-1-fundo {
     width: 100%;
     height: 450px;
-    background-color: rgb(59, 4, 4);
+    background-color: var(--cor4);
 }
 
 #title-1 {
     width: 100%;
     height: 200px;
-    background-color: brown;
+    background-color: var(--cor1);
+    font-family: var(--fonte-moderna);
     text-align: center;
     font-size: 2em;
     margin: auto;
@@ -91,14 +96,50 @@ td {
 
 
 /* FRANÇA */
-
+ 
 #espaco {
     margin: 10px;
+    padding: 10px;
+    margin: auto;
+}
+
+.fundo-sombra {
+    box-shadow: 0px 0px 8px black;
 }
 
 .divisao {
-    background-color: #610606;
-    padding: 50px;
+    background-color: var(--cor1);
+    padding: 2% 0 2% 0;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.856);
+}
+
+#div-divisao {
+    padding: 50px 0px 50px 0px;
+    background-color: var(--cor5);
+    border-top: 10px solid var(--cor5);
+    border-bottom: 10px solid var(--cor5);
+    
+}
+
+.divisap h3 {
+    color: var(--cor5);
+}
+
+#nome-lugar {
+    text-align: center;
+    margin-top: 156%;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--cor1);
+    font-family: var(--fonte-moderna);
+    font-weight: bold;
+}
+
+#nome-pais {
+    display: flex;
+    vertical-align: bottom;
+    color: white;
 }
 
 #franca {
@@ -117,8 +158,9 @@ td {
     padding-top: 10vh;
     padding-bottom: 10vh;
     margin-left: 20px;
-    font-size: 2em;
-    
+    font-size: 5em;
+    font-family: var(--fonte-destaque);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.438);
 }
 
 .imagens-paises {
@@ -129,8 +171,10 @@ td {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    background-color: brown;
+    background-color: var(--cor4);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.767);
 }
+
 
 .img-paises {
     width: 300px;
@@ -160,7 +204,7 @@ td {
 }
 
 #img4 {
-    background: url('../imagens-pag2/pexels-pixabay-208636.jpg') center center no-repeat scroll;
+    background: url('../imagens-pag2/pexels-jcosta-13692202.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
@@ -205,7 +249,7 @@ section#italia {
 }
 
 #img10 {
-    background: url('../imagens-pag2/pexels-dico-baskoro-693731013-18101408.jpg') center center no-repeat scroll;
+    background: url('../imagens-pag2/pexels-chiper-catalin-marian-519691-4026103.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
@@ -236,16 +280,50 @@ section#turquia {
 }
 
 #img15 {
-    background: url('../imagens-pag2/pexels-ekrulila-6312169.jpg') center center no-repeat scroll;
+    background: url('../imagens-pag2/pexels-sayefotograf-29584595.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
 #img16 {
-    background: url('../imagens-pag2/pexels-sahinsezerdincer-2264753.jpg') center center no-repeat scroll;
+    background: url('../imagens-pag2/pexels-we-asked-locals-1925446021-28823969.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
+@media screen and (max-width: 730px) {
+    aside h2 {
+        font-size: 3em;
+    } 
+}
 
+@media screen and (max-width: 1470px) {
+    aside h2 {
+        font-size: 5em;
+    }
+}
+
+@media screen and (max-width: 1226px) {
+    aside h2 {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 984px) {
+    aside h2 {
+        font-size: 3 em;
+    }
+}
+
+@media screen and (max-width: 1376px) {
+    #img4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1035px) {
+    #img4 {
+        display: block;
+    }
+}
 
 
 

@@ -1,5 +1,5 @@
 header {
-    background-color: brown;
+    background-color: var(--cor1);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -7,7 +7,7 @@ header {
 }
 
 header h1 {
-    color: rgba(252, 252, 252, 0.993);
+    color: var(--cor5);
     margin: 20px;
     font-weight: 300px;
     font-family: var(--fonte-destaque);
@@ -26,8 +26,8 @@ header > ul > a {
 header a {
     display: inline-block;
     text-decoration: none;
-    color: white;
-    border: 2px solid white;
+    color: var(--cor5);
+    border: 2px solid var(--cor5);
     padding: 10px;
     border-radius: 10px;
     transition: 0.5s ease-in-out;
@@ -35,7 +35,25 @@ header a {
 }
 
 header a:hover {
-    background-color: white;
-    color: brown;
+    background-color: var(--cor5);
+    color: var(--cor2);
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 730px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 3.5em;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    html {
+        scroll-behavior: auto;
+    }
 }

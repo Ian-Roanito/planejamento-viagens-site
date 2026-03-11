@@ -1,0 +1,156 @@
+
+footer {
+    left: 48px;
+    bottom: 58px;
+    right: 48px;
+    padding: 48px;
+    /*border-radius: 16px; - Opcional caso não queira o footer colado nas laterais*/ 
+    background-color: var(--cor5);
+}
+
+.top, .bottom {
+    display: flex;
+    gap: 48px; /* Anotar depois*/
+
+}
+
+.top {
+    margin-bottom: 24px;
+}
+
+.bottom {
+    padding: 32px 0 0;
+    align-items: center;
+    border-top: 2px solid var(--cor2);
+    gap: 24px;
+}
+
+.top:is(.left, .right) {
+    flex: 1 1 50%;
+}
+
+.bottom .left {
+    flex: 1 1 auto;
+}
+
+footer h2 {
+    margin: 0 0 12px;
+    font-size: 14px;
+    text-transform: uppercase; /* Tudo e letra maiuscula */
+    letter-spacing: 1px; /* Espaço entre as letras */
+    font-weight: 400;
+}
+
+footer h2, p {
+    color: var(--cor1);
+}
+
+footer p {
+    margin: 0;
+}
+
+blockquote {
+    padding: 0 24px 0 0;
+    margin: 0 0 24px;
+    font-size: 24px;
+    color: white;
+}
+
+button {
+    background-color: var(--cor2);
+    color: white;
+    display: inline-block;
+    gap: 8px;
+    align-items: center;
+    border: 0; /* Tira a borda */
+    border-radius: 40px;
+    padding: 12px 24px 12px 28px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button .symbols {
+    font-size: 20px;
+}
+
+.links {
+    display: flex;
+    gap: 48px;
+    padding-right: 48px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    margin: 0;
+    flex: 1 1 50%;
+}
+
+footer ul > li {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 14px;
+}
+
+footer ul > li > a {
+    text-decoration: none;
+    color: white;
+    margin: 0 0 14px;
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.socials > #face {
+    color: #1877f2;
+}
+
+.socials > #twit {
+    color: black;
+}
+
+.socials > #insta {
+    color: #f77737;
+}
+
+.socials > #linkedin {
+    color: #0a66c2;
+}
+
+@media (width <= 734px){
+    .top {
+        flex-direction: column;
+    }
+
+    blockquote {
+        padding-right: 0;
+    }
+}
+
+@media (width <= 320px) {
+    .bottom {
+        flex-direction: column-reverse;
+    }
+
+    .links {
+        padding-left: 24px;
+        padding-right: 24px;
+        text-align: center;
+    }
+
+    .top .left {
+        text-align: center;
+    }
+
+    blockquote {
+        padding-left: 58px;
+        padding-right: 58px;
+    }
+}
