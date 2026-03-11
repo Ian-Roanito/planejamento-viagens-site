@@ -1,0 +1,41 @@
+header {
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header h1 {
+    color: rgba(252, 252, 252, 0.993);
+    margin: 20px;
+    font-weight: 300px;
+    font-family: var(--fonte-destaque);
+    font-size: 4em;
+}
+
+header ul {
+    padding-top: 10px;
+    margin: 20px;
+}
+
+header > ul > a {
+    margin-left: 20px;
+}
+
+header a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+header a:hover {
+    background-color: white;
+    color: brown;
+    transform: scale(1.1);
+}
