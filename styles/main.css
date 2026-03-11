@@ -219,5 +219,34 @@ section#italia {
     background-size: cover;
 }
 
+section#turquia {
+    height: 50vh;
+    background: url('../imagens-pag2/pexels-francesco-ungaro-2325446.jpg') center center no-repeat scroll;
+    background-size: cover;
+}
+
+#img13 {
+    background: url('../imagens-pag2/pexels-leventsimsek-4365100.jpg') center center no-repeat scroll;
+    background-size: cover;
+}
+
+#img14 {
+    background: url('../imagens-pag2/pexels-kursatakkynl-3800181.jpg') center center no-repeat scroll;
+    background-size: cover;
+}
+
+#img15 {
+    background: url('../imagens-pag2/pexels-ekrulila-6312169.jpg') center center no-repeat scroll;
+    background-size: cover;
+}
+
+#img16 {
+    background: url('../imagens-pag2/pexels-sahinsezerdincer-2264753.jpg') center center no-repeat scroll;
+    background-size: cover;
+}
+
+
+
+
 
 
