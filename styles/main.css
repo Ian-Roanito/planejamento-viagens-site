@@ -313,14 +313,14 @@ section#turquia {
     }
 }
 
-@media screen and (max-width: 1376px) {
-    #img4 {
+@media screen and (max-width: 1396px) {
+    #img4, #img8, #img12, #img16 {
         display: none;
     }
 }
 
-@media screen and (max-width: 1035px) {
-    #img4 {
+@media screen and (max-width: 1056px) {
+    #img4, #img8, #img12, #img16 {
         display: block;
     }
 }
