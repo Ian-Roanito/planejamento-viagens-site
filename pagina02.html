@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&display=swap');
+         /* font-family: "Playwrite FR Moderne", cursive; */
+
+        @font-face {
+            font-family: 'MovLette';
+            src: url('./src/fonts/MovLette.ttf') format('truetype');
+        }
+        body {
+            
+            font-family: "Playwrite FR Moderne", cursive;
+        }
+        header {
+            background-color: brown;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        header h1 {
+            color: rgba(252, 252, 252, 0.993);
+            margin: 20px;
+            font-weight: 300px;
+            font-family: 'MovLette';
+            font-size: 4 em;
+        }
+
+        header ul {
+            padding-top: 10px;
+            margin: 20px;
+        }
+
+        header > ul > a {
+            margin-left: 20px;
+        }
+
+        header a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            border: 2px solid white;
+            padding: 10px;
+            border-radius: 10px;
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+        }
+
+        header a:hover {
+            background-color: white;
+            color: brown;
+            transform: scale(1.1);
+        }
+
+        section#inicio {
+            position: relative;
+            box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.753);
+            height: 90vh;
+            background: #ff0000b0 url('imagens-pag2/pexels-valiphotos-589841.jpg') center center no-repeat scroll;
+            background-size: cover;
+        }
+
+        aside#text {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #conteudo-inicio {
+            border-radius: 15px;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.527);
+            width: 100%;
+            padding: 10px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        #conteudo-inicio h2 {
+            font-family: 'MovLette';
+            color: white;
+        }
+
+        #conteudo-inicio:hover {
+            transform: scale(1.05);
+        }
+
+        aside h2 {
+            text-align: center;
+            font-size: 6em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.459);
+            color: rgb(104, 7, 7);
+        }
+        aside p {
+            padding-top: 10px;
+            line-height: 2em;
+            color: white;
+        }
+
+        table {
+            border-collapse: collapse;
+            background-color: rgba(128, 128, 128, 0.425);
+            margin: auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td {
+            color: white;
+        }
+
+        .cpontos {
+            width: 300px;
+        }
+
+        #table-caixa {
+            overflow-x: auto;
+        }
+
+        #secao-1-fundo {
+            width: 100%;
+            height: 450px;
+            background-color: rgb(59, 4, 4);
+        }
+
+        #title-1 {
+            width: 100%;
+            height: 200px;
+            background-color: brown;
+            text-align: center;
+            font-size: 2em;
+            margin: auto;
+            padding-top: 40px;
+            border-bottom-left-radius: 1000vh;
+            border-bottom-right-radius: 1000vh;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.582);
+        }
+
+        #franca {
+            height: 50vh;
+            background: url('./imagens-pag2/pexels-elina-sazonova-1850619.jpg') center top no-repeat scroll;
+            background-size: cover;
+            
+        }
+
+        #fundo-title-franca {
+            background-image: linear-gradient(to right, lightgray, transparent, transparent);
+            height: 50vh;
+        }
+
+        #title-franca {
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            margin-left: 20px;
+            font-size: 2em;
+            
+        }
+
+        #imagens-franca {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: brown;
+        }
+
+        #imagens-franca div {
+            width: 300px;
+            height: 500px;
+            margin: 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.719);
+            background-color: rgb(12, 54, 131);
+        }
+
+        #img1 {
+            background: url('./imagens-pag2/pexels-ashleyelena-705764.jpg') center center no-repeat scroll;
+            background-size: cover;
+        }
+
+        #img2 {
+            background: url('./imagens-pag2/pexels-alexazabache-3727254.jpg') center center no-repeat scroll;
+            background-size: cover;
+        }
+
+        #img3 {
+            background: url('./imagens-pag2/pexels-arianna-tavaglione-3680502-5984075.jpg') center center no-repeat scroll;
+            background-size: cover;
+        }
+
+        #img4 {
+            background: url('./imagens-pag2/pexels-pixabay-208636.jpg') center center no-repeat scroll;
+            background-size: cover;
+        }
+
+
+
+        @media screen and (max-width: 730px) {
+            header {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            aside h2 {
+                font-size: 3em;
+            }
+
+            
+        }
+
+        @media screen and (max-width: 1376px) {
+            #img4 {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1035px) {
+            #img4 {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 1470px) {
+            aside h2 {
+                font-size: 5em;
+            }
+        }
+
+        @media screen and (max-width: 1226px) {
+            aside h2 {
+                font-size: 4em;
+            }
+        }
+
+        @media screen and (max-width: 984px) {
+            aside h2 {
+                font-size: 3 em;
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+            <h1>Landing Page</h1>
+        
+            <ul>
+                <a href="">Home</a><a href="">Compra</a><a href="">Destaque</a><a href="">Footer</a>
+            </ul>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <aside id="text">
+                <div id="conteudo-inicio">
+                    <h2>Inicio da página</h2>
+                    <p>Aqui você encontra os melhores lugares no mundo para viajar, não perca as novidades que estão em alta no turismo.</p>
+
+                    <div id="table-caixa">
+                        <table>
+                            <colgroup>
+                                <col class="cpais">
+                                <col class="cpontos">
+                                <col class="cpreco">
+                            </colgroup>
+                            <thead>
+                                <th>País</th>
+                                <th>Pontos Turisticos</th>
+                                <th>Estimativa de Preço</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>França</td>
+                                    <td>Torre Eiffel, Musseu do Louvre</td>
+                                    <td>Alto(3° mais caro na Europa)</td>
+                                </tr>
+                                <tr>
+                                    <td>Espanha</td>
+                                    <td>Sagrada Fanilia(Barcelona), Praça deEspanha(Sevilha)</td>
+                                    <td>Médio-Alto (150+ por dia)</td>
+                                </tr>
+                                <tr>
+                                    <td>Itália</td>
+                                    <td>Colisseu, Catetral de Milão, Pompeia</td>
+                                    <td>Alto (167+ por dia)</td>
+                                </tr>
+                                <tr>
+                                    <td>Turquia</td>
+                                    <td>Capadócia (Balões), Mesquita Azul, Hagia Sophia</td>
+                                    <td>Média-Baixo</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section id="secao-1-fundo">
+            <div id="title-1">
+                <h3>Veja as Opções <br> Abaixo</h3>
+            </div>
+        </section>
+
+        <section id="franca">
+            <div id="fundo-title-franca">
+                <div id="title-franca">
+                    <h3>França</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="imagens-franca">
+            <div class="img-franca" id="img1"></div>
+            <div class="img-franca" id="img2"></div>
+            <div class="img-franca" id="img3"></div>
+            <div class="img-franca" id="img4"></div>
+        </section>
+    </main>
+</body>
+</html>
