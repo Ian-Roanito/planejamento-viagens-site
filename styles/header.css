@@ -40,7 +40,7 @@ header a:hover {
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 752px) {
     header {
         flex-direction: column;
         justify-content: center;
@@ -51,6 +51,8 @@ header a:hover {
         font-size: 3.5em;
     }
 }
+
+
 
 @media screen and (prefers-reduced-motion: reduce){
     html {
