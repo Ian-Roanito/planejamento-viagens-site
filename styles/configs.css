@@ -28,6 +28,27 @@
     --fonte-moderna: "Poppins", sans-serif;
 }
 
+/* CSS Variables generated from Kigen.design */
+:root {
+  --forest-green-1: #c7ffc9;
+  --forest-green-2: #23fd41;
+  --forest-green-3: #1cd736;
+  --forest-green-4: #16b62c;
+  --forest-green-5: #119924;
+  --forest-green-6: #0c7e1c;
+  --forest-green-7: #0a7519;
+  --forest-green-8: #086816;
+  --forest-green-9: #065b12;
+  --forest-green-10: #054c0d;
+  --forest-green-11: #04450b;
+  --forest-green-12: #033c09;
+  --forest-green-13: #023406;
+  --forest-green-14: #012d05;
+  --forest-green-15: #012503;
+  --forest-green-16: #011e02;
+  --forest-green-17: #001501;
+}
+
 body {
     
     font-family: var(--fonte-moderna);
