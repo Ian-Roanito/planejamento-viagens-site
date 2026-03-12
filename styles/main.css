@@ -293,6 +293,10 @@ section#turquia {
     aside h2 {
         font-size: 3em;
     } 
+
+    #conteudo-inicio {
+        
+    }
 }
 
 @media screen and (max-width: 1470px) {

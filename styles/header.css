@@ -50,6 +50,15 @@ header a:hover {
     header h1 {
         font-size: 3.5em;
     }
+
+    header > ul > a {
+        margin-left: 10px;
+    }
+
+    header > ul  {
+        display: flex;
+       
+    }
 }
 
 
