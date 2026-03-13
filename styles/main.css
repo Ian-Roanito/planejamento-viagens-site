@@ -1,92 +1,78 @@
 
 main {
-    background-color: rgb(65, 63, 63);
+    background-color: var(--green-50);
 }
 
 section#inicio {
     position: relative;
+    display: flex;
+    justify-content: end;
     box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.753);
     height: 90vh;
-    background: #ff0000b0 url('../imagens-pag2/pexels-valiphotos-589841.jpg') center center no-repeat scroll;
+    background: var(--green-700) url('../novas-imagens/pexels-quang-nguyen-vinh-222549-2131856.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
 aside#text {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 30%;
+    position: absolute;   
 }
 
 #conteudo-inicio {
-    border-radius: 15px;
+    border-radius: 15px 0px 0px 15px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-    background-color: #332a29ce;
+    background-image: linear-gradient(to left, #00ff4063, #00ff4063, #00ff4063,transparent);
     width: 100%;
-    padding: 10px;
-    transition: transform 0.5s ease-in-out;
 }
 
 #conteudo-inicio h2 {
-    font-family: 'MovLette';
-    color: var(--cor1);
+    font-family: var(--fonte-viagem);
+    color: black;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.397);
+    text-align: end;
+    
+    border-bottom: 1px solid black;
+    padding: 5px;
 }
 
-#conteudo-inicio:hover {
-    transform: scale(1.05);
-
+#conteudo-inicio p {
+    color: var(--green-950);
+    font-size: 26px;
+    font-weight: bold;
+    text-align: justify;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.479);
+    padding: 5px;
 }
+
 
 aside h2 {
     text-align: center;
     font-size: 6em;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.459);
     color: rgb(104, 7, 7);
-
+    font-family: var(--fonte-verao);
 }
 
 aside p {
     padding-top: 10px;
     line-height: 2em;
     color: white;
-
-}
-
-
-table {
-    border-collapse: collapse;
-    background-color: rgba(128, 128, 128, 0.425);
-    margin: auto;
-
-}
-
-
-th, td {
-    border: 1px solid black;
-    padding: 10px;
-
-}
-
-    
-td {
-    color: white;
-
 }
 
 #secao-1-fundo {
     width: 100%;
     height: 450px;
-    background-color: var(--cor4);
+    background-color: var(--green-50);
 }
 
 #title-1 {
     width: 100%;
     height: 200px;
-    background-color: var(--cor1);
-    font-family: var(--fonte-moderna);
+    background-color: var(--green-700);
+    color: white;
+    font-family: var(--fonte-viagem);
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     margin: auto;
     padding-top: 40px;
     border-bottom-left-radius: 1000vh;
@@ -99,7 +85,7 @@ td {
  
 #espaco {
     margin: 10px;
-    padding: 10px;
+    padding: 80px 10px 80px 10px;
     margin: auto;
 }
 
@@ -108,32 +94,70 @@ td {
 }
 
 .divisao {
-    background-color: var(--cor1);
+    background-color: var(--green-100);
     padding: 2% 0 2% 0;
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.856);
 }
 
 #div-divisao {
     padding: 50px 0px 50px 0px;
-    background-color: var(--cor5);
-    border-top: 10px solid var(--cor5);
-    border-bottom: 10px solid var(--cor5);
+    background-color: var(--green-900);
+    border-top: 10px solid var(--green-900);
+    border-bottom: 10px solid var(--green-900);
     
 }
 
-.divisap h3 {
-    color: var(--cor5);
+/*=========ESTILIZAÇÃO DA DIVISÃO ENTRE SECTIONS=========*/
+
+.container {
+  position: relative;
+  background: var(--green-600);
+  height: 30vh;
 }
+
+.wave {
+  position: absolute;
+  height: 89px;
+  width: 100%;
+  background: var(--green-700);
+  bottom: 0;
+}
+
+.wave::before, .wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+}
+
+.wave::before {
+  width: 55%;
+  height: 109%;
+  background-color: var(--green-800);
+  right: 1%;
+  top: 60%;
+  z-index: 2;
+}
+.wave::after {
+  width: 55%;
+  height: 100%;
+  background-color: var(--green-700);
+  left: -1.5%;
+  top: 40%;
+}
+
+/*==================*/
 
 #nome-lugar {
     text-align: center;
-    margin-top: 156%;
+    margin-top: 146%;
     padding: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: var(--cor1);
-    font-family: var(--fonte-moderna);
-    font-weight: bold;
+    background-color: #c5ffc973;
+    font-family: var(--fonte-verao);
+    font-weight: normal;
+    font-size: 3em;
 }
 
 #nome-pais {
@@ -157,9 +181,10 @@ td {
 .title-pais {
     padding-top: 10vh;
     padding-bottom: 10vh;
+    padding-left: 20px;
     margin-left: 20px;
     font-size: 5em;
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonte-viagem);
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.438);
 }
 
@@ -171,7 +196,7 @@ td {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    background-color: var(--cor4);
+    background-color: var(--green-700);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.767);
 }
 
@@ -189,22 +214,22 @@ td {
 
 
 #img1 {
-    background: url('../imagens-pag2/pexels-ashleyelena-705764.jpg') center center no-repeat scroll;
+    background: url('../novas-imagens/arco-do-triunfo.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
 #img2 {
-    background: url('../imagens-pag2/pexels-alexazabache-3727254.jpg') center center no-repeat scroll;
+    background: url('../novas-imagens/torre-eiffell.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
 #img3 {
-    background: url('../imagens-pag2/pexels-arianna-tavaglione-3680502-5984075.jpg') center center no-repeat scroll;
+    background: url('../novas-imagens/musei-do-louvre.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
 #img4 {
-    background: url('../imagens-pag2/pexels-jcosta-13692202.jpg') center center no-repeat scroll;
+    background: url('../novas-imagens/palacio-versalhes.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
@@ -217,23 +242,23 @@ section#espanha {
 }
 
 #img5 {
-    background: url('../imagens-pag2/pexels-alexazabache-3757136.jpg') center center no-repeat scroll;
+    background: url('../novas-imagens/edificio-metropolis.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
 #img6 {
-    background: url('../imagens-pag2/pexels-tomas-malik-793526-1703311.jpg') center center no-repeat scroll;
+    background: url('../novas-imagens/ronda.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
 #img7 {
-    background: url('../imagens-pag2/pexels-adnara-24380136.jpg') center center no-repeat scroll;
+    background: url('../novas-imagens/aqueduto.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
 
 #img8 {
-    background: url('../imagens-pag2/pexels-arcanjosaddi-18957041.jpg') center center no-repeat scroll;
+    background: url('../novas-imagens/catedral-barcelona.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
@@ -244,22 +269,22 @@ section#italia {
 }
 
 #img9 {
-    background: url('../imagens-pag2/pexels-david-bartus-43782-586687.jpg') center center no-repeat scroll;
+    background: url('../novas-imagens/veneza.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
 #img10 {
-    background: url('../imagens-pag2/pexels-chiper-catalin-marian-519691-4026103.jpg') center center no-repeat scroll;
+    background: url('../novas-imagens/torre-de-pisa.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
 #img11 {
-    background: url('../imagens-pag2/pexels-mark-neal-201020-2225439.jpg') center center no-repeat scroll;
+    background: url('../novas-imagens/coliseu.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
 #img12 {
-    background: url('../imagens-pag2/pexels-mark-neal-201020-2225442.jpg') center center no-repeat scroll;
+    background: url('../novas-imagens/fontana-di-trevi.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
@@ -270,22 +295,22 @@ section#turquia {
 }
 
 #img13 {
-    background: url('../imagens-pag2/pexels-leventsimsek-4365100.jpg') center center no-repeat scroll;
+    background: url('../novas-imagens/palacio-de-topkapi.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
 #img14 {
-    background: url('../imagens-pag2/pexels-kursatakkynl-3800181.jpg') center center no-repeat scroll;
+    background: url('../novas-imagens/estreito-de-bosforo.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
 #img15 {
-    background: url('../imagens-pag2/pexels-sayefotograf-29584595.jpg') center center no-repeat scroll;
+    background: url('../novas-imagens/mesquita-selimiye.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
 #img16 {
-    background: url('../imagens-pag2/pexels-we-asked-locals-1925446021-28823969.jpg') center center no-repeat scroll;
+    background: url('../novas-imagens/palacio=dolmabahce.jpg') center center no-repeat scroll;
     background-size: cover;
 }
 
@@ -294,6 +319,16 @@ section#turquia {
         font-size: 3em;
     } 
 
+}
+
+@media screen and (max-width: 1068px){
+    #conteudo-inicio {
+        width: 100%;
+    }
+
+    .title-pais {
+        font-size: 3em;
+    }
 }
 
 @media screen and (max-width: 1470px) {

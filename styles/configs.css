@@ -14,6 +14,26 @@
     src: url('../src/fonts/MovLette.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Vocation';
+    src: url('../src/fonts/Vocation.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Summer';
+    src: url('../src/fonts/Summer.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MordernSans';
+    src: url('../src/fonts/ModernSans-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Quadranta';
+    src: url('../src/fonts/Quadranta-Regular.otf') format('opentrue');
+}
+
 :root {
 
     --cor0: #e75a55;
@@ -25,28 +45,26 @@
 
 
     --fonte-destaque: 'MovLette', cursive;
-    --fonte-moderna: "Poppins", sans-serif;
+    --fonte-moderna: 'MordernSans';
+    --fonte-viagem: 'Vocation';
+    --fonte-verao: 'Summer';
+    --fonte-quadranta: 'Quadranta;'
 }
 
 /* CSS Variables generated from Kigen.design */
+/* CSS Variables generated from Kigen.design */
 :root {
-  --forest-green-1: #c7ffc9;
-  --forest-green-2: #23fd41;
-  --forest-green-3: #1cd736;
-  --forest-green-4: #16b62c;
-  --forest-green-5: #119924;
-  --forest-green-6: #0c7e1c;
-  --forest-green-7: #0a7519;
-  --forest-green-8: #086816;
-  --forest-green-9: #065b12;
-  --forest-green-10: #054c0d;
-  --forest-green-11: #04450b;
-  --forest-green-12: #033c09;
-  --forest-green-13: #023406;
-  --forest-green-14: #012d05;
-  --forest-green-15: #012503;
-  --forest-green-16: #011e02;
-  --forest-green-17: #001501;
+  --green-50: #c5ffc9;
+  --green-100: #00ff40;
+  --green-200: #00ed3b;
+  --green-300: #00d433;
+  --green-400: #00b82b;
+  --green-500: #009b23;
+  --green-600: #007d1a;
+  --green-700: #005f11;
+  --green-800: #004109;
+  --green-900: #002403;
+  --green-950: #001501;
 }
 
 body {
