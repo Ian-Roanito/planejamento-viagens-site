@@ -25,9 +25,7 @@ footer {
     gap: 24px;
 }
 
-.top:is(.left, .right) {
-    flex: 1 1 50%;
-}
+ma
 
 .bottom .left {
     flex: 1 1 auto;
